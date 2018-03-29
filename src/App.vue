@@ -59,33 +59,51 @@
           <v-list-tile-action>
             <v-icon>compare_arrows</v-icon>
           </v-list-tile-action>
-          <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
+          <v-list-tile-title>Seite wechseln</v-list-tile-title>
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
     <v-footer :fixed="fixed" app>
-      <span>&copy; 2017</span>
+      <span>&copy; 2018</span>
     </v-footer>
   </v-app>
 </template>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       clipped: false,
       drawer: true,
       fixed: false,
-      items: [{
-        icon: 'bubble_chart',
-        title: 'Inspire'
-      }],
+      items: [
+        {
+          icon: "bubble_chart",
+          title: "Menü"
+        },
+        {
+          icon: "bubble_chart",
+          title: "Projekte"
+        },
+        {
+          icon: "bubble_chart",
+          title: "Projekte"
+        },
+        {
+          icon: "gear",
+          title: "Account"
+        },
+        {
+          icon: "logout",
+          title: "Logout"
+        }
+      ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
-    }
+      title: "Project Pool"
+    };
   },
-  name: 'App'
-}
+  name: "App"
+};
 </script>
